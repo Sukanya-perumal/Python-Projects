@@ -1,4 +1,4 @@
-<h2>Turtle & the Graphical User Interface (GUI))</h2>
+<h2>Turtle & the Graphical User Interface (GUI)</h2>
 <h2>Concepts</h2>
 <ul>
   <li>Understanding Turtle Graphics and How to use the Documentation</li>
