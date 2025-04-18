@@ -6,5 +6,5 @@
    <li>Search spotify for the songs</li>
 <li>Create and add the spotify playlist</li>
 </ul>
-<h2>Hirst Painting Project</h2>
+<h2>Music Time Machine Project</h2>
 <img src="billboard.gif" alt="Billboard">
