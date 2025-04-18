@@ -7,4 +7,4 @@
 <li>Create and add the spotify playlist</li>
 </ul>
 <h2>Music Time Machine Project</h2>
-<img src="billboard.gif" alt="Billboard">
+<img src="Billboard.gif" alt="Billboard">
