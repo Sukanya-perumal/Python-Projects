@@ -1,0 +1,251 @@
+{
+  "info": {
+    "_postman_id": "00a6ae0a-a396-4fcc-9a24-b7998f2d2e9a",
+    "name": "Cafe & Wifi",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "34695747"
+  },
+  "item": [
+    {
+      "name": "Search Cafes By Location",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/search?loc=London Bridge",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "search"
+          ],
+          "query": [
+            {
+              "key": "loc",
+              "value": "London Bridge"
+            }
+          ]
+        },
+        "description": "The /search route will search the Cafe database for a cafe that matches the location queried. Use loc parameter to pass the location"
+      },
+      "response": []
+    },
+    {
+      "name": "Get All The Cafes",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/all",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "all"
+          ]
+        },
+        "description": "The /all route will list all the cafes in the Cafe database."
+      },
+      "response": []
+    },
+    {
+      "name": "Get Random Cafe",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/random",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "random"
+          ]
+        },
+        "description": "The /random route will randomly list one cafe from Cafe database"
+      },
+      "response": []
+    },
+    {
+      "name": "Add New Cafe",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "name",
+              "value": "Malibu Jack's Louisville",
+              "type": "text",
+              "uuid": "be33a6e3-a341-4a28-8704-8c6f46f858ab"
+            },
+            {
+              "key": "map_url",
+              "value": "https://maps.app.goo.gl/LLntJmR5BsVrJF8n7",
+              "type": "text",
+              "uuid": "c10d6bd2-0cc3-437a-ab54-d98e39cfdfc0"
+            },
+            {
+              "key": "img_url",
+              "value": "https://atlondonbridge.com/wp-content/uploads/2019/02/Pano_9758_9761-Edit-190918_LTS_Science_Gallery-Medium-Crop-V2.jpg",
+              "type": "text",
+              "uuid": "a25b1bd4-c58b-43e7-a90d-b490285ae856"
+            },
+            {
+              "key": "loc",
+              "value": "Hackney",
+              "type": "text",
+              "uuid": "edc3df05-c2f7-4a40-9de1-d27bb9ed8e24"
+            },
+            {
+              "key": "has_sockets",
+              "value": "0",
+              "type": "text",
+              "uuid": "ead05f84-6c87-4607-8bd4-e441ca2fd0d5"
+            },
+            {
+              "key": "has_toilet",
+              "value": "1",
+              "type": "text",
+              "uuid": "f0f27efa-da98-460d-a8b5-d7ae2919c577"
+            },
+            {
+              "key": "has_wifi",
+              "value": "1",
+              "type": "text",
+              "uuid": "4c7fe63b-f8b5-4f32-8b53-7e22e7b887c4"
+            },
+            {
+              "key": "can_take_calls",
+              "value": "1",
+              "type": "text",
+              "uuid": "07c3fa29-65b5-40ab-9cab-ab8800ee9dbb"
+            },
+            {
+              "key": "seats",
+              "value": "20-30",
+              "type": "text",
+              "uuid": "ec654767-d323-4c0f-b76f-92d4e429f209"
+            },
+            {
+              "key": "coffee_price",
+              "value": "$2.75",
+              "type": "text",
+              "uuid": "a22502df-9528-4fc2-90ce-95935dbbabba"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/add",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "add"
+          ]
+        },
+        "description": "The /add route post new cafe to the Cafe database"
+      },
+      "response": []
+    },
+    {
+      "name": "Update The Coffee Price",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PATCH",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/update_price/22?new_price=$4.25",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "update_price",
+            "22"
+          ],
+          "query": [
+            {
+              "key": "new_price",
+              "value": "$4.25"
+            }
+          ]
+        },
+        "description": "The /update_price route updateed the price of the selected coffee in the database."
+      },
+      "response": []
+    },
+    {
+      "name": "Delete The Cafe",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/report_closed/20?Api_key=TOPSECRETAPIKEY",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "report_closed",
+            "20"
+          ],
+          "query": [
+            {
+              "key": "Api_key",
+              "value": "TOPSECRETAPIKEY"
+            }
+          ]
+        },
+        "description": "The /report_closed route delete the cafe in the database using it's id."
+      },
+      "response": []
+    }
+  ]
+}
