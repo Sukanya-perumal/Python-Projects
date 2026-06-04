@@ -123,38 +123,7 @@ def delete_cafe(cafe_id):
         return jsonify(error={"Not Found": "Sorry that's not allowed. Make sure you have correct api key."}), 403
 
 
-
-
-
-
-# HTTP GET - Read Record
-
-# HTTP POST - Create Record
-
-# HTTP PUT/PATCH - Update Record
-
-# HTTP DELETE - Delete Record
-
-
 if __name__ == '__main__':
     app.run(debug=True)
-# @app.route("/all")
-# def get_all_cafes():
-#     all_record = Cafe.query.all()
-#       all_cafe_list = []
-#     for record in all_record:
-        # cafes = {
-        #             "id": record.id,
-        #             "name": record.name,
-        #             "map_url": record.map_url,
-        #             "img_url": record.img_url,
-        #             "location": record.location,
-        #             "has_sockets": record.has_sockets,
-        #             "has_toilet": record.has_toilet,
-        #             "has_wifi": record.has_wifi,
-        #             "can_take_calls": record.can_take_calls,
-        #             "seats": record.seats,
-        #             "coffee_price": record.coffee_price
-        #         }
-        #         all_cafe_list.append(cafes)
-    # return jsonify(cafes = all_cafe_list)
+
+      
