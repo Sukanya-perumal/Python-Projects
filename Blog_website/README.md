@@ -14,3 +14,9 @@ Technologies Used
 * Flask-SQLAlchemy (Database ORM)
 * HTML5 / CSS3 / Bootstrap (Frontend styling)
 
+Output:
+<img width="742" height="106" alt="output" src="https://github.com/user-attachments/assets/45a47a69-7cea-4f99-9f97-734ddef5d0e3" />
+
+
+
+
