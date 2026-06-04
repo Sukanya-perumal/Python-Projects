@@ -40,5 +40,3 @@ if float(final_price) <= 100:
 
 
 
-# <span class="aok-offscreen"> $99.99 </span>
-# <span class="a-price-whole">99<span class="a-price-decimal">.</span></span>
